@@ -1,0 +1,13 @@
+﻿  Compiling CUDA source file fft.cu...
+  
+  C:\Users\13217\Desktop\repo\optFFT\parallelFFT>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"  -G   --keep-dir parallelFFT\x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdparallelFFT\x64\Debug\vc143.pdb" -o C:\Users\13217\Desktop\repo\optFFT\parallelFFT\parallelFFT\x64\Debug\fft.cu.obj "C:\Users\13217\Desktop\repo\optFFT\parallelFFT\fft.cu" 
+C:\Users\13217\Desktop\repo\optFFT\parallelFFT\fft.cu(23): warning #177-D: variable "pair" was declared but never referenced
+    				int pair = xStart + numOfElem/2;
+    				    ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+  fft.cu
+  tmpxft_000028c8_00000000-7_fft.cudafe1.cpp
+C:\Users\13217\Desktop\repo\optFFT\parallelFFT\fft.cu(101): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  parallelFFT.vcxproj -> C:\Users\13217\Desktop\repo\optFFT\parallelFFT\x64\Debug\parallelFFT.exe

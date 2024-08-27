@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "parallelFFT", "parallelFFT.vcxproj", "{58DC94C0-02B5-4129-8244-50CD4F24290B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58DC94C0-02B5-4129-8244-50CD4F24290B}.Debug|x64.ActiveCfg = Debug|x64
+		{58DC94C0-02B5-4129-8244-50CD4F24290B}.Debug|x64.Build.0 = Debug|x64
+		{58DC94C0-02B5-4129-8244-50CD4F24290B}.Release|x64.ActiveCfg = Release|x64
+		{58DC94C0-02B5-4129-8244-50CD4F24290B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F06D2C22-A5AD-477D-A9FA-A6DD5F22D7B4}
+	EndGlobalSection
+EndGlobal
