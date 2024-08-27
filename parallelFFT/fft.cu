@@ -20,7 +20,6 @@ fft_naive(cuFloatComplex* x, int n, int steps){
 				float angle = -2.0f * M_PI * k / numOfElem;
 				cuFloatComplex rotation = make_cuFloatComplex(cos(angle), sin(angle));
 
-				int pair = xStart + numOfElem/2;
 				cuFloatComplex even = x[xStart+k];
 				cuFloatComplex odd = x[xStart + numOfElem/2 + k];
 				cuFloatComplex twiddle = cuCmulf(rotation,odd);
