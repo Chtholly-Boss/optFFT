@@ -1,3 +1,4 @@
+#include <torch/extension.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <cuda_runtime.h>
@@ -112,6 +113,7 @@ int fft(cuFloatComplex* x_h, int n){
  * @return int 
  */
 int main(int argc, char* argv[]) {
+	
 	cuFloatComplex *x_h;
 	x_h = (cuFloatComplex*) malloc(N * sizeof cuFloatComplex);
 	// initialize 
@@ -126,4 +128,8 @@ int main(int argc, char* argv[]) {
 	// free host memory
 	free(x_h);
 	return 0;
+}
+
+PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
+    m.def("fft_naive", &fft_naive, "FFT naive implementation(CUDA)");
 }
