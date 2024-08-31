@@ -1,5 +1,7 @@
-# Ignore Python cache files
+# project files
 __pycache__/
+build/
+MyFFT.egg-info/
 lab/
 
 # Other ignores can go here
