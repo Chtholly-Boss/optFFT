@@ -42,13 +42,3 @@ class FFT_1d:
         res = myFFT.naive(a.cuda())
         res = res.cpu()
         return res
-    
-if __name__ == "__main__":
-    length = 10
-
-    a = torch.tensor([i for i in range(length)], dtype=torch.complex64)
-    op = FFT_1d()
-
-    res = op.naive(a)
-
-    print("Result:", res)
